@@ -1,7 +1,5 @@
-import dns from 'node:dns';
-import mongoose from 'mongoose';
 
-dns.setServers(['8.8.8.8', '8.8.4.4']);
+import mongoose from 'mongoose';
 
 export async function connectDB() {
   mongoose.set('strictQuery', true);
