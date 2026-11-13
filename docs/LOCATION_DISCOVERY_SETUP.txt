@@ -1,0 +1,11 @@
+LOCATION DISCOVERY QUICK START
+
+1. Open a terminal in the project folder.
+2. Install backend packages: cd server && npm install
+3. Configure server/.env from server/.env.example and start MongoDB.
+4. Start backend: npm run dev
+5. In another terminal: cd client && npm install
+6. Start frontend: npm run dev
+7. Open http://localhost:5173/discover
+
+The map feature uses Leaflet + OpenStreetMap tiles and dummy data. No Google Maps API key is required.

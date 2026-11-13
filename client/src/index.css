@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #172b2a;
+  background: #f7faf9;
+  font-synthesis: none;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Manrope', sans-serif;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+.container-app {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+.card {
+  @apply rounded-2xl border border-slate-100 bg-white shadow-soft;
+}
+.field {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-100;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-50;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-brand-300 hover:text-brand-700;
+}
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-[0.18em] text-brand-700;
+}
+
+/* Leaflet provider pins */
+.gowander-marker-wrap {
+  background: transparent;
+  border: 0;
+}
+.gowander-marker {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: #087f68;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.28);
+  font-size: 13px;
+}
+.gowander-marker span {
+  transform: rotate(45deg);
+}
+.leaflet-container {
+  z-index: 0;
+  font-family: 'DM Sans', sans-serif;
+}
