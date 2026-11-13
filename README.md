@@ -1,4 +1,4 @@
-# GoWander — Advanced Travel Listing & Experience Marketplace
+# GoWander — Advanced Travel Listing & Experience Marketplace 
 
 A full-stack MERN application based on the supplied GoWander SRS.
 
