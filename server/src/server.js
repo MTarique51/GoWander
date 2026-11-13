@@ -5,7 +5,7 @@ import { connectDB } from './config/db.js';
 const port = process.env.PORT || 5000;
 try {
   await connectDB();
-  app.listen(port, () => console.log(`GoWander API running on http://localhost:${port}`));
+  app.listen(port,"0.0.0.0", () => console.log(`GoWander API running on http://localhost:${port}`));
 } catch (error) {
   console.error('Failed to start server:', error.message);
   process.exit(1);
